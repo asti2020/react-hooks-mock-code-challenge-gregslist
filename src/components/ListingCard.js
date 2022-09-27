@@ -21,7 +21,7 @@ function ListingCard({listing}) {
         )}
         <strong>{listing.description}</strong>
         <span> · {listing.location}</span>
-        <button id={listing.id} onClick={() =>console.log("Remove")} className="emoji-button delete">🗑</button>
+        <button id={listing.id} onClick={() => console.log(listing)} className="emoji-button delete">🗑</button>
       </div>
     </li>
   );
