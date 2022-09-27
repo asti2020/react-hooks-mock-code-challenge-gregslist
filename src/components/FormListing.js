@@ -32,6 +32,7 @@ function FormListing ({newListing}) {
         newListing(list)
        })
     }
+    
   return (
     <form onSubmit={handleSubmit}>
         <input onChange={handleDescription} type="text" placeholder="description" value={description} />

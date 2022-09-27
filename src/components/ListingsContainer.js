@@ -6,9 +6,7 @@ function ListingsContainer({listings}) {
     <main>
       <ul className="cards">
         {listings.map(listing=>{
-          console.log(listing)
-          return <ListingCard key={listing.id} listing={listing}  />;
-          
+          return <ListingCard key={listing.id} listing={listing} />;
         })}
       </ul>
     </main>

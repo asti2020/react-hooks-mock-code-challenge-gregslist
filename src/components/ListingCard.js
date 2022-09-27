@@ -6,6 +6,7 @@ function ListingCard({listing}) {
   function toggleFavorite() {
     setFavorite(!favorite)
   }
+
   return (
     <li className="card">
       <div className="image">
@@ -20,7 +21,7 @@ function ListingCard({listing}) {
         )}
         <strong>{listing.description}</strong>
         <span> · {listing.location}</span>
-        <button className="emoji-button delete">🗑</button>
+        <button id={listing.id} onClick={() =>console.log("Remove")} className="emoji-button delete">🗑</button>
       </div>
     </li>
   );

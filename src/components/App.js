@@ -3,6 +3,7 @@ import  FormListing  from "./FormListing";
 import Header from "./Header";
 import ListingsContainer from "./ListingsContainer";
 
+
 function App() {
   const[listings, setListings] = useState([])
   // const [card, setCard] = useState([])
@@ -19,10 +20,11 @@ function App() {
     const newListing =(card) =>{
       setListings([...listings, card])
     }
+    
     return (
       <div className="app">
         <Header />
-        <ListingsContainer  listings={listings}/>
+        <ListingsContainer listings={listings}/>
         <FormListing  newListing={newListing}/>
       </div>
     );
